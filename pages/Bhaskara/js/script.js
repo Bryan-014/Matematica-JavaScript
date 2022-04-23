@@ -15,15 +15,13 @@ function calculate() {
         haveErrors = true;
     }
 
-    if (haveErrors) {
+    if (haveErrors)
         return;
-    }
 
     let rootDelt = Math.sqrt(calculateDelt(a, b, c));
 
-    if (haveErrors) {
+    if (haveErrors)
         return;
-    }
 
     let doubleA = 2 * a;
 
@@ -43,21 +41,17 @@ function calculateDelt(varA, varB, varC) {
 }
 function calculateX(varB, delt, varA, operation) {
     let up = 0;
-    if (operation == "positive") {
+    if (operation == "positive")
         up = - varB + delt;
-    } else if (operation == "negative") {
+    else if (operation == "negative")
         up = - varB - delt;
-    }
     return up / varA;
 }
 function validEmptyTextBoxes() {
-    if (document.getElementById("inputA").value == "") {
+    if (document.getElementById("inputA").value == "")
         document.getElementById("inputA").value = 0;
-    }
-    if (document.getElementById("inputB").value == "") {
+    if (document.getElementById("inputB").value == "")
         document.getElementById("inputB").value = 0;
-    }
-    if (document.getElementById("inputC").value == "") {
+    if (document.getElementById("inputC").value == "")
         document.getElementById("inputC").value = 0;
-    }
 }
