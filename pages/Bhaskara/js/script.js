@@ -28,7 +28,7 @@ function calculate() {
     let XOne = calculateX(b, rootDelt, doubleA, "positive");
     let XTwo = calculateX(b, rootDelt, doubleA, "negative");
 
-    txtResult.value = "O valor de x¹ é: " + XOne + " e o valor de x² é: " + XTwo;
+    txtResult.value = "O valor de x¹ é: " + XOne.toFixed(2) + " e o valor de x² é: " + XTwo.toFixed(2);
 }
 function calculateDelt(varA, varB, varC) {
     let squareB = varB * varB;
